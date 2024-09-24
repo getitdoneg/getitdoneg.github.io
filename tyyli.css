@@ -1,0 +1,93 @@
+/* General styles for larger screens */
+.image_1 {
+    float: left;   
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: rgb(142, 167, 167);
+}
+
+.eka_aihe {
+    color: rgb(245, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 20px;
+}
+
+.button1, .button2, .button3, .button4 {
+    padding: 15px 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
+    background-color: rgb(9, 17, 235);
+}
+
+main {
+    padding: 30px;
+}
+
+.aihe {
+    margin-bottom: 20px;
+}
+
+header, main, .harrastukset {
+    border: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Adjust the logo size */
+    .image_1 img {
+        width: 60px; /* Smaller logo size for mobile */
+    }
+
+    /* Stack buttons vertically */
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .button1, .button2, .button3, .button4 {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        font-size: 18px; /* Slightly smaller font size for mobile */
+    }
+
+    /* Reduce padding for the main content */
+    main {
+        padding: 20px;
+    }
+
+    /* Adjust text alignment and size for smaller screens */
+    .eka_aihe h1 {
+        font-size: 24px;
+    }
+
+    .toka_aihe h2 {
+        font-size: 20px;
+    }
+
+    /* Adjust the hobbies section */
+    .harrastukset {
+        padding: 30px;
+        height: auto; /* Allow height to adapt */
+    }
+
+    /* General font-size adjustments */
+    p, h1, h2 {
+        font-size: 16px;
+    }
+}
